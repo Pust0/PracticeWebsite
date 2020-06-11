@@ -26,22 +26,13 @@
     <div class="regbox">
         <div class="registration">
             <h2>Registration</h2>
-            <label>Email</label>
-            <input type="text" placeholder="Enter your email" required>
-
-            <label>Username</label>
-            <input type="text" placeholder="New Username" required>
-
-            <label>Password</label>
-            <input type="password" placeholder="New Password" required>
-
-            <label>Re-enter Password</label>
-            <input type="text" placeholder="Re-enter password" required>
-
-            <span>Agree to sell your soul?</span>
-            <input type="checkbox" required><br>
-
-            <button>Register</button>
+                <form method="POST" action="/signup">
+                    <input placeholder="firstName" name="firstName" type="text">
+                    <input placeholder="lastName" name="lastName" type="text">
+                    <input placeholder="username" name="username" type="text">
+                    <input type="password" placeholder="password" name="password">
+                    <input type="submit">
+                </form>
         </div>
 
         <div class="signin">

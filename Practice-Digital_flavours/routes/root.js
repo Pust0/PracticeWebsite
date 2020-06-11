@@ -7,7 +7,7 @@ route.get('/login',(req,res)=>{
 })
 
 route.get('/signup',(req,res)=>{
-    res.render('signup')
+    res.render('index')
 })
 
 route.post('/login', passport.authenticate('local',{
